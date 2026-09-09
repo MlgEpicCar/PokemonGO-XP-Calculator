@@ -1,0 +1,41 @@
+<!--I'm so fucking rusty-->
+<p>Pokemon GO XP Calculator</p>
+<p>Calculate the exact XP of any Pokemon GO player with this tool</p>
+<p>(Doesn't work for players level 80)</p>
+
+<label for="level">User Level:</label>
+<input type="text" id="level" name="level"><br><br>
+
+<label for="XP">XP to next Level:</label>
+<input type="number" id="XP" name="XP"><br><br>
+
+<button onclick="findLevel()">Find Level</button>
+
+<p id="result"></p>
+
+<script>
+    let levels;
+
+    fetch('../LevelXP.json')
+        .then(response => response.json())
+        .then(data => {
+            levels = data.levels;
+        });
+
+    function findLevel() {
+        const userLevel = Number(document.getElementById("level").value);
+        const userXP = Number(document.getElementById("XP").value);
+
+        const foundLevel = levels.find(level => level.number === userLevel);
+
+        if (foundLevel) {
+            const totalXP = foundLevel.totalXP + userXP;
+
+            document.getElementById("result").textContent =
+                "Your total XP is: " + totalXP;
+        } else {
+            document.getElementById("result").textContent =
+                "Level does not exist.";
+        }
+    }
+</script>

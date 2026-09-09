@@ -1,0 +1,324 @@
+{
+  "levels": [
+    {
+      "number": 1,
+      "totalXP": 0
+    },
+    {
+      "number": 2,
+      "totalXP": 2500
+    },
+    {
+      "number": 3,
+      "totalXP": 5500
+    },
+    {
+      "number": 4,
+      "totalXP": 9000
+    },
+    {
+      "number": 5,
+      "totalXP": 13000
+    },
+    {
+      "number": 6,
+      "totalXP": 18000
+    },
+    {
+      "number": 7,
+      "totalXP": 24000
+    },
+    {
+      "number": 8,
+      "totalXP": 31000
+    },
+    {
+      "number": 9,
+      "totalXP": 39000
+    },
+    {
+      "number": 10,
+      "totalXP": 48000
+    },
+    {
+      "number": 11,
+      "totalXP": 58000
+    },
+    {
+      "number": 12,
+      "totalXP": 70000
+    },
+    {
+      "number": 13,
+      "totalXP": 84000
+    },
+    {
+      "number": 14,
+      "totalXP": 100000
+    },
+    {
+      "number": 15,
+      "totalXP": 118000
+    },
+    {
+      "number": 16,
+      "totalXP": 139000
+    },
+    {
+      "number": 17,
+      "totalXP": 163500
+    },
+    {
+      "number": 18,
+      "totalXP": 191500
+    },
+    {
+      "number": 19,
+      "totalXP": 223000
+    },
+    {
+      "number": 20,
+      "totalXP": 258000
+    },
+    {
+      "number": 21,
+      "totalXP": 300000
+    },
+    {
+      "number": 22,
+      "totalXP": 349000
+    },
+    {
+      "number": 23,
+      "totalXP": 405000
+    },
+    {
+      "number": 24,
+      "totalXP": 468000
+    },
+    {
+      "number": 25,
+      "totalXP": 538000
+    },
+    {
+      "number": 26,
+      "totalXP": 621000
+    },
+    {
+      "number": 27,
+      "totalXP": 717000
+    },
+    {
+      "number": 28,
+      "totalXP": 826000
+    },
+    {
+      "number": 29,
+      "totalXP": 948000
+    },
+    {
+      "number": 30,
+      "totalXP": 1083000
+    },
+    {
+      "number": 31,
+      "totalXP": 1241000
+    },
+    {
+      "number": 32,
+      "totalXP": 1422000
+    },
+    {
+      "number": 33,
+      "totalXP": 1626000
+    },
+    {
+      "number": 34,
+      "totalXP": 1853000
+    },
+    {
+      "number": 35,
+      "totalXP": 2103000
+    },
+    {
+      "number": 36,
+      "totalXP": 2393000
+    },
+    {
+      "number": 37,
+      "totalXP": 2723000
+    },
+    {
+      "number": 38,
+      "totalXP": 3093000
+    },
+    {
+      "number": 39,
+      "totalXP": 3503000
+    },
+    {
+      "number": 40,
+      "totalXP": 3953000
+    },
+    {
+      "number": 41,
+      "totalXP": 4473000
+    },
+    {
+      "number": 42,
+      "totalXP": 5063000
+    },
+    {
+      "number": 43,
+      "totalXP": 5723000
+    },
+    {
+      "number": 44,
+      "totalXP": 6453000
+    },
+    {
+      "number": 45,
+      "totalXP": 7253000
+    },
+    {
+      "number": 46,
+      "totalXP": 8153000
+    },
+    {
+      "number": 47,
+      "totalXP": 9153000
+    },
+    {
+      "number": 48,
+      "totalXP": 10253000
+    },
+    {
+      "number": 49,
+      "totalXP": 11453000
+    },
+    {
+      "number": 50,
+      "totalXP": 12753000
+    },
+    {
+      "number": 51,
+      "totalXP": 14193000
+    },
+    {
+      "number": 52,
+      "totalXP": 15773000
+    },
+    {
+      "number": 53,
+      "totalXP": 17493000
+    },
+    {
+      "number": 54,
+      "totalXP": 19353000
+    },
+    {
+      "number": 55,
+      "totalXP": 21353000
+    },
+    {
+      "number": 56,
+      "totalXP": 23553000
+    },
+    {
+      "number": 57,
+      "totalXP": 25953000
+    },
+    {
+      "number": 58,
+      "totalXP": 28553000
+    },
+    {
+      "number": 59,
+      "totalXP": 31353000
+    },
+    {
+      "number": 60,
+      "totalXP": 34353000
+    },
+    {
+      "number": 61,
+      "totalXP": 37703000
+    },
+    {
+      "number": 62,
+      "totalXP": 41403000
+    },
+    {
+      "number": 63,
+      "totalXP": 45453000
+    },
+    {
+      "number": 64,
+      "totalXP": 49853000
+    },
+    {
+      "number": 65,
+      "totalXP": 54603000
+    },
+    {
+      "number": 66,
+      "totalXP": 59853000
+    },
+    {
+      "number": 67,
+      "totalXP": 65603000
+    },
+    {
+      "number": 68,
+      "totalXP": 71853000
+    },
+    {
+      "number": 69,
+      "totalXP": 78603000
+    },
+    {
+      "number": 70,
+      "totalXP": 85853000
+    },
+    {
+      "number": 71,
+      "totalXP": 93853000
+    },
+    {
+      "number": 72,
+      "totalXP": 102603000
+    },
+    {
+      "number": 73,
+      "totalXP": 112103000
+    },
+    {
+      "number": 74,
+      "totalXP": 122353000
+    },
+    {
+      "number": 75,
+      "totalXP": 133353000
+    },
+    {
+      "number": 76,
+      "totalXP": 145353000
+    },
+    {
+      "number": 77,
+      "totalXP": 158353000
+    },
+    {
+      "number": 78,
+      "totalXP": 172353000
+    },
+    {
+      "number": 79,
+      "totalXP": 187353000
+    },
+    {
+      "number": 80,
+      "totalXP": 203353000
+    }
+  ]
+}
