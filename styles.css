@@ -1,0 +1,53 @@
+html {
+    background-color: rgb(56, 56, 56);
+    text-align: center;
+}
+
+p, label {
+    color: white;
+    font-size: 20;
+}
+
+button {
+    border-radius: 33%;
+    padding: 8;
+    font-weight: bold;
+    font-size: 20;
+    background-color: rgb(38, 57, 163);
+    color: white;
+}
+
+input {
+    color: white;
+    background-color: rgb(84, 93, 148);
+}
+
+a {
+    color: rgb(119, 133, 226);
+}
+
+.title {
+    font-weight: bold;
+    font-size: 30;
+}
+
+.inputs {
+    text-align: right;
+}
+
+.credits {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.centerer {
+    display: grid;
+    place-content: center;
+}
+
+#result {
+    color: lemonchiffon;
+    font-size: 30;
+}

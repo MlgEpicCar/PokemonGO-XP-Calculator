@@ -1,46 +1,63 @@
-<!--I'm so fucking rusty-->
-<p>Pokemon GO XP Calculator</p>
-<p>Calculate the exact XP of any Pokemon GO player with this tool</p>
-<p>(Doesn't work for players level 80)</p>
+<html>
+    <!--I'm so fucking rusty-->
+    <link rel="stylesheet" href="styles.css">
 
-<label for="level">User Level:</label>
-<input type="text" id="level" name="level"><br><br>
+    <br>
 
-<label for="XP">XP to next Level:</label>
-<input type="number" id="XP" name="XP"><br><br>
+    <p class="title">Pokemon GO XP Calculator</p>
+    <p>Calculate the exact XP of any Pokemon GO player with this tool!</p>
+    <p>(Doesn't work for players level 80)</p>
 
-<button onclick="findXP()">Find Total XP</button>
+    <div class="centerer">
+        <div class="inputs">
+            <label for="level">User Level:</label>
+            <input type="text" id="level" name="level"><br><br>
 
-<p id="result"></p>
+            <label for="XP">XP to next Level:</label>
+            <input type="number" id="XP" name="XP"><br><br>
+        </div>
+    </div>
 
-<script>
-    let levels;
+    <br>
+    <button onclick="findXP()">Find Total XP</button>
 
-    fetch('LevelXP.json')
-        .then(response => response.json())
-        .then(data => {
-            levels = data.levels;
-        });
+    <br>
+    <p id="result"></p>
 
-    function findXP() {
-        const userLevel = Number(document.getElementById("level").value);
-        const userXP = Number(document.getElementById("XP").value);
+    <script>
+        let levels;
 
-        const foundLevel = levels.find(level => level.number === userLevel);
+        fetch('LevelXP.json')
+            .then(response => response.json())
+            .then(data => {
+                levels = data.levels;
+            });
 
-        if (foundLevel) {
-            const totalXP = foundLevel.totalXP + userXP;
+        function findXP() {
+            const userLevel = Number(document.getElementById("level").value);
+            const userXP = Number(document.getElementById("XP").value);
 
-            if (foundLevel.number == 80) {
-                document.getElementById("result").textContent =
-                    "Your total XP is at least: " + totalXP;
+            const foundLevel = levels.find(level => level.number === userLevel);
+
+            if (foundLevel) {
+                const totalXP = foundLevel.totalXP + userXP;
+
+                if (foundLevel.number == 80) {
+                    document.getElementById("result").innerHTML =
+                        "Your total XP is at least: <strong>" + totalXP + "</strong>";
+                } else {
+                    document.getElementById("result").innerHTML =
+                        "Your total XP is: <strong>" + totalXP + "</strong>";
+                }
             } else {
-                document.getElementById("result").textContent =
-                    "Your total XP is: " + totalXP;
+                document.getElementById("result").innerHTML =
+                    "Level does not exist.";
             }
-        } else {
-            document.getElementById("result").textContent =
-                "Level does not exist.";
         }
-    }
-</script>
+    </script>
+
+    <div class="credits">
+        <p>Calculator by MlgEpicCar</p>
+        <p>Data from <a href="https://pokemongo.fandom.com/wiki/List_of_Trainer_levels" target="_blank">pokemongo.fandom.com</a></p>
+    </div>
+</html>
