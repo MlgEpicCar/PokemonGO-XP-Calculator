@@ -9,7 +9,7 @@
 <label for="XP">XP to next Level:</label>
 <input type="number" id="XP" name="XP"><br><br>
 
-<button onclick="findLevel()">Find Level</button>
+<button onclick="findXP()">Find Total XP</button>
 
 <p id="result"></p>
 
@@ -22,7 +22,7 @@
             levels = data.levels;
         });
 
-    function findLevel() {
+    function findXP() {
         const userLevel = Number(document.getElementById("level").value);
         const userXP = Number(document.getElementById("XP").value);
 
@@ -31,8 +31,13 @@
         if (foundLevel) {
             const totalXP = foundLevel.totalXP + userXP;
 
-            document.getElementById("result").textContent =
-                "Your total XP is: " + totalXP;
+            if (foundLevel.number == 80) {
+                document.getElementById("result").textContent =
+                    "Your total XP is at least: " + totalXP;
+            } else {
+                document.getElementById("result").textContent =
+                    "Your total XP is: " + totalXP;
+            }
         } else {
             document.getElementById("result").textContent =
                 "Level does not exist.";
