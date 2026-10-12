@@ -22,7 +22,30 @@
     <button onclick="findXP()">Find Total XP</button>
 
     <br>
-    <p id="result"></p>
+    <p id="findXP-result"></p>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Sum -->
+    <p class="title">Basic Addition Calculator</p>
+    <p>For when you want to sum the XP of someone with alt accounts!</p>
+    <div class="centerer">
+        <div class="inputs">
+            <label for="xpval1">Value 1:</label>
+            <input type="number" id="xpval1" name="xpval1"><br><br>
+
+            <label for="xpval2">Value 2:</label>
+            <input type="number" id="xpval2" name="xpval2"><br><br>
+        </div>
+    </div>
+    <button onclick="sum()">Find Sum</button>
+
+    <br>
+    <p id="sum-result"></p>
 
     <script>
         let levels;
@@ -43,16 +66,24 @@
                 const totalXP = foundLevel.totalXP + userXP;
 
                 if (foundLevel.number == 80) {
-                    document.getElementById("result").innerHTML =
+                    document.getElementById("findXP-result").innerHTML =
                         "Your total XP is at least: <strong>" + totalXP + "</strong>";
                 } else {
-                    document.getElementById("result").innerHTML =
+                    document.getElementById("findXP-result").innerHTML =
                         "Your total XP is: <strong>" + totalXP + "</strong>";
                 }
             } else {
-                document.getElementById("result").innerHTML =
+                document.getElementById("findXP-result").innerHTML =
                     "Level does not exist.";
             }
+        }
+
+        function sum() {
+            const value01 = Number(document.getElementById("xpval1").value);
+            const value02 = Number(document.getElementById("xpval2").value);
+
+            document.getElementById("sum-result").innerHTML =
+                "The sum of these values is: <strong>" + (value01 + value02) + "</strong>";
         }
     </script>
 

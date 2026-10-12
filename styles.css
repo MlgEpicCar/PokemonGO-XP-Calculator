@@ -47,7 +47,7 @@ a {
     place-content: center;
 }
 
-#result {
+#findXP-result, #sum-result {
     color: lemonchiffon;
     font-size: 30;
 }
